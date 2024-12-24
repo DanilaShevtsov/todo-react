@@ -1,0 +1,110 @@
+.App {
+  background: linear-gradient(240deg, rgb(42, 0, 85), rgb(60, 0, 75));
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.Frame-main {
+  min-height: 10vh;
+  max-height: 90vh;
+  background: linear-gradient(90deg, rgb(82, 2, 162), rgb(163, 4, 203));
+  box-shadow: 0px 0px 10px 5px rgb(82, 2, 162);
+  width: clamp(800px, 80%, 1500px);
+  border-radius: 20px;
+  margin-top: 20px;
+  overflow: hidden;
+  padding: 40px;
+  overflow-y: scroll;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.noteList {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+.noteItem {
+  flex: 1;
+  box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
+  width: 90%;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  transition: transform 0.3s step-end, opacity 0.3s ease;
+}
+
+.noteItem.removing {
+  transform: translateY(100px);
+  opacity: 0;
+}
+
+.text-div {
+  flex: 20;
+  color: aliceblue;
+
+
+}
+
+.options-div {
+  color: aliceblue;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+
+.title-notes {
+  margin-left: 40px;
+  color: aliceblue;
+}
+
+.add-notes {
+  margin-left: 40px;
+  color: aliceblue;
+  cursor: pointer;
+}
+
+.dataEntry {
+  height: 40px;
+  width: clamp(200px, 80%, 500px);
+  margin: 10px;
+  border-radius: 10px;
+  border-color: rgb(198, 0, 253);
+  padding: 5px;
+  font-size: 17px;
+}
+
+.dataButton {
+  height: 40px;
+  width: clamp(200px, 80%, 500px);
+
+  margin: 10px;
+  border-radius: 10px;
+  border-color: aliceblue;
+  background-color: white;
+  color: white;
+  padding: 5px;
+  font-size: 19px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(2400deg, rgb(82, 2, 162), rgb(163, 4, 203));
+
+}
